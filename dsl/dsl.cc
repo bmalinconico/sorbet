@@ -19,6 +19,7 @@
 #include "dsl/Struct.h"
 #include "dsl/TypeMembers.h"
 #include "dsl/attr_reader.h"
+#include "dsl/flatten.h"
 #include "dsl/module_function.h"
 #include "main/pipeline/semantic_extension/SemanticExtension.h"
 
@@ -161,6 +162,7 @@ unique_ptr<ast::Expression> DSL::run(core::MutableContext ctx, unique_ptr<ast::E
     DSLReplacer dslReplacer;
     ast = ast::TreeMap::apply(ctx, dslReplacer, std::move(ast));
     auto verifiedResult = ast::Verifier::run(ctx, std::move(ast));
+    verifiedResult = Flatten::patchFile(ctx, std::move(verifiedResult));
     return verifiedResult;
 }
 
