@@ -8,6 +8,8 @@ class <emptyTree><<C <root>>> < ()
   class <emptyTree>::<C SomeClass><<C <todo sym>>> < (::<todo sym>)
     <self>.include(<emptyTree>::<C Interface>)
 
+    <emptyTree>
+
     def other_method<<C <todo sym>>>(&<blk>)
       <emptyTree>
     end
@@ -18,6 +20,8 @@ class <emptyTree><<C <root>>> < ()
       <emptyTree>
     end
   end
+
+  <emptyTree>
 
   def testit<<C <todo sym>>>(&<blk>)
     begin
