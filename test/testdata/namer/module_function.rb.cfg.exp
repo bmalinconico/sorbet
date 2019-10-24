@@ -132,7 +132,7 @@ subgraph "cluster_::<Class:Funcs>#<static-init>" {
     "bb::<Class:Funcs>#<static-init>_1" [shape = parallelogram];
 
     "bb::<Class:Funcs>#<static-init>_0" [
-        label = "block[id=0, rubyBlockId=0]()\l<self>: T.class_of(Funcs) = cast(<self>: NilClass, AppliedType {\l  klass = <S <C <U Funcs>> $1>\l  targs = [\l    <C <U <AttachedClass>>> = SelfTypeParam(<S <C <U Funcs>> $1><C <U <AttachedClass>>>)\l  ]\l});\l<statTemp>$5: Symbol(:\"f\") = :\"f\"\l<statTemp>$3: T.class_of(Funcs) = <self>: T.class_of(Funcs).private(<statTemp>$5: Symbol(:\"f\"))\l<block-pre-call-temp>$8: Sorbet::Private::Static::Void = <self>: T.class_of(Funcs).sig()\l<selfRestore>$9: T.class_of(Funcs) = <self>\l<unconditional>\l"
+        label = "block[id=0, rubyBlockId=0]()\l<self>: T.class_of(Funcs) = cast(<self>: NilClass, AppliedType {\l  klass = <S <C <U Funcs>> $1>\l  targs = [\l    <C <U <AttachedClass>>> = SelfTypeParam(<S <C <U Funcs>> $1><C <U <AttachedClass>>>)\l  ]\l});\l<block-pre-call-temp>$5: Sorbet::Private::Static::Void = <self>: T.class_of(Funcs).sig()\l<selfRestore>$6: T.class_of(Funcs) = <self>\l<unconditional>\l"
     ];
 
     "bb::<Class:Funcs>#<static-init>_0" -> "bb::<Class:Funcs>#<static-init>_2" [style="bold"];
@@ -142,19 +142,19 @@ subgraph "cluster_::<Class:Funcs>#<static-init>" {
 
     "bb::<Class:Funcs>#<static-init>_1" -> "bb::<Class:Funcs>#<static-init>_1" [style="bold"];
     "bb::<Class:Funcs>#<static-init>_2" [
-        label = "block[id=2, rubyBlockId=1](<self>: T.class_of(Funcs), <selfRestore>$9: T.class_of(Funcs))\louterLoops: 1\l<block-call>: NilClass\l"
+        label = "block[id=2, rubyBlockId=1](<self>: T.class_of(Funcs), <selfRestore>$6: T.class_of(Funcs))\louterLoops: 1\l<block-call>: NilClass\l"
     ];
 
     "bb::<Class:Funcs>#<static-init>_2" -> "bb::<Class:Funcs>#<static-init>_5" [style="bold"];
     "bb::<Class:Funcs>#<static-init>_2" -> "bb::<Class:Funcs>#<static-init>_3" [style="tapered"];
 
     "bb::<Class:Funcs>#<static-init>_3" [
-        label = "block[id=3, rubyBlockId=0](<selfRestore>$9: T.class_of(Funcs))\l<statTemp>$6: Sorbet::Private::Static::Void = Solve<sig>\l<self>: T.class_of(Funcs) = <selfRestore>$9\l<block-pre-call-temp>$23: Sorbet::Private::Static::Void = <self>: T.class_of(Funcs).sig()\l<selfRestore>$24: T.class_of(Funcs) = <self>\l<unconditional>\l"
+        label = "block[id=3, rubyBlockId=0](<selfRestore>$6: T.class_of(Funcs))\l<statTemp>$3: Sorbet::Private::Static::Void = Solve<sig>\l<self>: T.class_of(Funcs) = <selfRestore>$6\l<statTemp>$20: Symbol(:\"f\") = :\"f\"\l<statTemp>$18: T.class_of(Funcs) = <self>: T.class_of(Funcs).private(<statTemp>$20: Symbol(:\"f\"))\l<block-pre-call-temp>$23: Sorbet::Private::Static::Void = <self>: T.class_of(Funcs).sig()\l<selfRestore>$24: T.class_of(Funcs) = <self>\l<unconditional>\l"
     ];
 
     "bb::<Class:Funcs>#<static-init>_3" -> "bb::<Class:Funcs>#<static-init>_6" [style="bold"];
     "bb::<Class:Funcs>#<static-init>_5" [
-        label = "block[id=5, rubyBlockId=1](<self>: T.class_of(Funcs), <selfRestore>$9: T.class_of(Funcs))\louterLoops: 1\l<self>: T::Private::Methods::DeclBuilder = loadSelf\l<hashTemp>$16: Symbol(:\"x\") = :\"x\"\l<hashTemp>$17: T.class_of(Integer) = alias <C Integer>\l<magic>$18: T.class_of(<Magic>) = alias <C <Magic>>\l<statTemp>$15: {x: T.class_of(Integer)} = <magic>$18: T.class_of(<Magic>).<build-hash>(<hashTemp>$16: Symbol(:\"x\"), <hashTemp>$17: T.class_of(Integer))\l<statTemp>$13: T::Private::Methods::DeclBuilder = <self>: T::Private::Methods::DeclBuilder.params(<statTemp>$15: {x: T.class_of(Integer)})\l<statTemp>$19: T.class_of(Integer) = alias <C Integer>\l<blockReturnTemp>$12: T::Private::Methods::DeclBuilder = <statTemp>$13: T::Private::Methods::DeclBuilder.returns(<statTemp>$19: T.class_of(Integer))\l<blockReturnTemp>$20: T.noreturn = blockreturn<sig> <blockReturnTemp>$12: T::Private::Methods::DeclBuilder\l<unconditional>\l"
+        label = "block[id=5, rubyBlockId=1](<self>: T.class_of(Funcs), <selfRestore>$6: T.class_of(Funcs))\louterLoops: 1\l<self>: T::Private::Methods::DeclBuilder = loadSelf\l<hashTemp>$13: Symbol(:\"x\") = :\"x\"\l<hashTemp>$14: T.class_of(Integer) = alias <C Integer>\l<magic>$15: T.class_of(<Magic>) = alias <C <Magic>>\l<statTemp>$12: {x: T.class_of(Integer)} = <magic>$15: T.class_of(<Magic>).<build-hash>(<hashTemp>$13: Symbol(:\"x\"), <hashTemp>$14: T.class_of(Integer))\l<statTemp>$10: T::Private::Methods::DeclBuilder = <self>: T::Private::Methods::DeclBuilder.params(<statTemp>$12: {x: T.class_of(Integer)})\l<statTemp>$16: T.class_of(Integer) = alias <C Integer>\l<blockReturnTemp>$9: T::Private::Methods::DeclBuilder = <statTemp>$10: T::Private::Methods::DeclBuilder.returns(<statTemp>$16: T.class_of(Integer))\l<blockReturnTemp>$17: T.noreturn = blockreturn<sig> <blockReturnTemp>$9: T::Private::Methods::DeclBuilder\l<unconditional>\l"
     ];
 
     "bb::<Class:Funcs>#<static-init>_5" -> "bb::<Class:Funcs>#<static-init>_2" [style="bold"];

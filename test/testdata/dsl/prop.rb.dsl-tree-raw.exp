@@ -14,7 +14,18 @@ ClassDef{
           symbol = ::<todo sym>
         }]
       rhs = [
-        EmptyTree
+        MethodDef{
+          flags = self
+          name = <U prop><<C <U <todo sym>>>>
+          args = [RestArg{ expr = UnresolvedIdent{
+              kind = Local
+              name = <U args>
+            } }, BlockArg{ expr = UnresolvedIdent{
+              kind = Local
+              name = <U <blk>>
+            } }]
+          rhs = EmptyTree
+        }
 
         Send{
           recv = Local{
@@ -235,19 +246,6 @@ ClassDef{
             }
           ]
         }
-
-        MethodDef{
-          flags = self
-          name = <U prop><<C <U <todo sym>>>>
-          args = [RestArg{ expr = UnresolvedIdent{
-              kind = Local
-              name = <U args>
-            } }, BlockArg{ expr = UnresolvedIdent{
-              kind = Local
-              name = <U <blk>>
-            } }]
-          rhs = EmptyTree
-        }
       ]
     }
 
@@ -278,22 +276,6 @@ ClassDef{
             }
           ]
         }
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
 
         Send{
           recv = ConstantLit{
@@ -625,1358 +607,6 @@ ClassDef{
           symbol = ::<todo sym>
         }]
       rhs = [
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        ClassDef{
-          kind = class
-          name = UnresolvedConstantLit{
-            scope = EmptyTree
-            cnst = <C <U Mutator>>
-          }<<C <U <todo sym>>>>
-          ancestors = []
-          rhs = [
-            EmptyTree
-
-            EmptyTree
-
-            EmptyTree
-
-            EmptyTree
-
-            Send{
-              recv = ConstantLit{
-                orig = nullptr
-                symbol = ::T::Sig::WithoutRuntime
-              }
-              fun = <U sig>
-              block = Block {
-                args = [
-                ]
-                body = Send{
-                  recv = Send{
-                    recv = Local{
-                      localVariable = <U <self>>
-                    }
-                    fun = <U params>
-                    block = nullptr
-                    args = [
-                      Hash{
-                        pairs = [
-                          [
-                            key = Literal{ value = :"arg0" }
-                            value = UnresolvedConstantLit{
-                              scope = EmptyTree
-                              cnst = <C <U Array>>
-                            }
-                          ]
-                        ]
-                      }
-                    ]
-                  }
-                  fun = <U returns>
-                  block = nullptr
-                  args = [
-                    UnresolvedConstantLit{
-                      scope = EmptyTree
-                      cnst = <C <U Array>>
-                    }
-                  ]
-                }
-              }
-              args = [
-              ]
-            }
-
-            MethodDef{
-              flags = dsl
-              name = <U array=><<C <U <todo sym>>>>
-              args = [UnresolvedIdent{
-                  kind = Local
-                  name = <U arg0>
-                }, BlockArg{ expr = UnresolvedIdent{
-                  kind = Local
-                  name = <U <blk>>
-                } }]
-              rhs = Send{
-                recv = ConstantLit{
-                  orig = nullptr
-                  symbol = ::T
-                }
-                fun = <U cast>
-                block = nullptr
-                args = [
-                  Send{
-                    recv = ConstantLit{
-                      orig = nullptr
-                      symbol = ::T
-                    }
-                    fun = <U unsafe>
-                    block = nullptr
-                    args = [
-                      Literal{ value = nil }
-                    ]
-                  }
-                  UnresolvedConstantLit{
-                    scope = EmptyTree
-                    cnst = <C <U Array>>
-                  }
-                ]
-              }
-            }
-
-            Send{
-              recv = ConstantLit{
-                orig = nullptr
-                symbol = ::T::Sig::WithoutRuntime
-              }
-              fun = <U sig>
-              block = Block {
-                args = [
-                ]
-                body = Send{
-                  recv = Local{
-                    localVariable = <U <self>>
-                  }
-                  fun = <U returns>
-                  block = nullptr
-                  args = [
-                    Send{
-                      recv = UnresolvedConstantLit{
-                        scope = UnresolvedConstantLit{
-                          scope = UnresolvedConstantLit{
-                            scope = UnresolvedConstantLit{
-                              scope = UnresolvedConstantLit{
-                                scope = ConstantLit{
-                                  orig = nullptr
-                                  symbol = ::<root>
-                                }
-                                cnst = <C <U Chalk>>
-                              }
-                              cnst = <C <U ODM>>
-                            }
-                            cnst = <C <U Mutator>>
-                          }
-                          cnst = <C <U Private>>
-                        }
-                        cnst = <C <U ArrayMutator>>
-                      }
-                      fun = <U []>
-                      block = nullptr
-                      args = [
-                        Send{
-                          recv = ConstantLit{
-                            orig = nullptr
-                            symbol = ::T
-                          }
-                          fun = <U untyped>
-                          block = nullptr
-                          args = [
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              }
-              args = [
-              ]
-            }
-
-            MethodDef{
-              flags = dsl
-              name = <U array><<C <U <todo sym>>>>
-              args = [BlockArg{ expr = UnresolvedIdent{
-                  kind = Local
-                  name = <U <blk>>
-                } }]
-              rhs = Send{
-                recv = ConstantLit{
-                  orig = nullptr
-                  symbol = ::T
-                }
-                fun = <U cast>
-                block = nullptr
-                args = [
-                  Send{
-                    recv = ConstantLit{
-                      orig = nullptr
-                      symbol = ::T
-                    }
-                    fun = <U unsafe>
-                    block = nullptr
-                    args = [
-                      Literal{ value = nil }
-                    ]
-                  }
-                  Send{
-                    recv = UnresolvedConstantLit{
-                      scope = UnresolvedConstantLit{
-                        scope = UnresolvedConstantLit{
-                          scope = UnresolvedConstantLit{
-                            scope = UnresolvedConstantLit{
-                              scope = ConstantLit{
-                                orig = nullptr
-                                symbol = ::<root>
-                              }
-                              cnst = <C <U Chalk>>
-                            }
-                            cnst = <C <U ODM>>
-                          }
-                          cnst = <C <U Mutator>>
-                        }
-                        cnst = <C <U Private>>
-                      }
-                      cnst = <C <U ArrayMutator>>
-                    }
-                    fun = <U []>
-                    block = nullptr
-                    args = [
-                      Send{
-                        recv = ConstantLit{
-                          orig = nullptr
-                          symbol = ::T
-                        }
-                        fun = <U untyped>
-                        block = nullptr
-                        args = [
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            }
-          ]
-        }
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        ClassDef{
-          kind = class
-          name = UnresolvedConstantLit{
-            scope = EmptyTree
-            cnst = <C <U Mutator>>
-          }<<C <U <todo sym>>>>
-          ancestors = []
-          rhs = [
-            EmptyTree
-
-            EmptyTree
-
-            EmptyTree
-
-            EmptyTree
-
-            Send{
-              recv = ConstantLit{
-                orig = nullptr
-                symbol = ::T::Sig::WithoutRuntime
-              }
-              fun = <U sig>
-              block = Block {
-                args = [
-                ]
-                body = Send{
-                  recv = Send{
-                    recv = Local{
-                      localVariable = <U <self>>
-                    }
-                    fun = <U params>
-                    block = nullptr
-                    args = [
-                      Hash{
-                        pairs = [
-                          [
-                            key = Literal{ value = :"arg0" }
-                            value = UnresolvedConstantLit{
-                              scope = EmptyTree
-                              cnst = <C <U Array>>
-                            }
-                          ]
-                        ]
-                      }
-                    ]
-                  }
-                  fun = <U returns>
-                  block = nullptr
-                  args = [
-                    UnresolvedConstantLit{
-                      scope = EmptyTree
-                      cnst = <C <U Array>>
-                    }
-                  ]
-                }
-              }
-              args = [
-              ]
-            }
-
-            MethodDef{
-              flags = dsl
-              name = <U array_of_explicit=><<C <U <todo sym>>>>
-              args = [UnresolvedIdent{
-                  kind = Local
-                  name = <U arg0>
-                }, BlockArg{ expr = UnresolvedIdent{
-                  kind = Local
-                  name = <U <blk>>
-                } }]
-              rhs = Send{
-                recv = ConstantLit{
-                  orig = nullptr
-                  symbol = ::T
-                }
-                fun = <U cast>
-                block = nullptr
-                args = [
-                  Send{
-                    recv = ConstantLit{
-                      orig = nullptr
-                      symbol = ::T
-                    }
-                    fun = <U unsafe>
-                    block = nullptr
-                    args = [
-                      Literal{ value = nil }
-                    ]
-                  }
-                  UnresolvedConstantLit{
-                    scope = EmptyTree
-                    cnst = <C <U Array>>
-                  }
-                ]
-              }
-            }
-
-            Send{
-              recv = ConstantLit{
-                orig = nullptr
-                symbol = ::T::Sig::WithoutRuntime
-              }
-              fun = <U sig>
-              block = Block {
-                args = [
-                ]
-                body = Send{
-                  recv = Local{
-                    localVariable = <U <self>>
-                  }
-                  fun = <U returns>
-                  block = nullptr
-                  args = [
-                    Send{
-                      recv = UnresolvedConstantLit{
-                        scope = UnresolvedConstantLit{
-                          scope = UnresolvedConstantLit{
-                            scope = UnresolvedConstantLit{
-                              scope = UnresolvedConstantLit{
-                                scope = ConstantLit{
-                                  orig = nullptr
-                                  symbol = ::<root>
-                                }
-                                cnst = <C <U Chalk>>
-                              }
-                              cnst = <C <U ODM>>
-                            }
-                            cnst = <C <U Mutator>>
-                          }
-                          cnst = <C <U Private>>
-                        }
-                        cnst = <C <U ArrayMutator>>
-                      }
-                      fun = <U []>
-                      block = nullptr
-                      args = [
-                        Send{
-                          recv = ConstantLit{
-                            orig = nullptr
-                            symbol = ::T
-                          }
-                          fun = <U untyped>
-                          block = nullptr
-                          args = [
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              }
-              args = [
-              ]
-            }
-
-            MethodDef{
-              flags = dsl
-              name = <U array_of_explicit><<C <U <todo sym>>>>
-              args = [BlockArg{ expr = UnresolvedIdent{
-                  kind = Local
-                  name = <U <blk>>
-                } }]
-              rhs = Send{
-                recv = ConstantLit{
-                  orig = nullptr
-                  symbol = ::T
-                }
-                fun = <U cast>
-                block = nullptr
-                args = [
-                  Send{
-                    recv = ConstantLit{
-                      orig = nullptr
-                      symbol = ::T
-                    }
-                    fun = <U unsafe>
-                    block = nullptr
-                    args = [
-                      Literal{ value = nil }
-                    ]
-                  }
-                  Send{
-                    recv = UnresolvedConstantLit{
-                      scope = UnresolvedConstantLit{
-                        scope = UnresolvedConstantLit{
-                          scope = UnresolvedConstantLit{
-                            scope = UnresolvedConstantLit{
-                              scope = ConstantLit{
-                                orig = nullptr
-                                symbol = ::<root>
-                              }
-                              cnst = <C <U Chalk>>
-                            }
-                            cnst = <C <U ODM>>
-                          }
-                          cnst = <C <U Mutator>>
-                        }
-                        cnst = <C <U Private>>
-                      }
-                      cnst = <C <U ArrayMutator>>
-                    }
-                    fun = <U []>
-                    block = nullptr
-                    args = [
-                      Send{
-                        recv = ConstantLit{
-                          orig = nullptr
-                          symbol = ::T
-                        }
-                        fun = <U untyped>
-                        block = nullptr
-                        args = [
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            }
-          ]
-        }
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        ClassDef{
-          kind = class
-          name = UnresolvedConstantLit{
-            scope = EmptyTree
-            cnst = <C <U Mutator>>
-          }<<C <U <todo sym>>>>
-          ancestors = []
-          rhs = [
-            EmptyTree
-
-            EmptyTree
-
-            EmptyTree
-
-            EmptyTree
-
-            Send{
-              recv = ConstantLit{
-                orig = nullptr
-                symbol = ::T::Sig::WithoutRuntime
-              }
-              fun = <U sig>
-              block = Block {
-                args = [
-                ]
-                body = Send{
-                  recv = Send{
-                    recv = Local{
-                      localVariable = <U <self>>
-                    }
-                    fun = <U params>
-                    block = nullptr
-                    args = [
-                      Hash{
-                        pairs = [
-                          [
-                            key = Literal{ value = :"arg0" }
-                            value = Send{
-                              recv = UnresolvedConstantLit{
-                                scope = UnresolvedConstantLit{
-                                  scope = EmptyTree
-                                  cnst = <C <U T>>
-                                }
-                                cnst = <C <U Array>>
-                              }
-                              fun = <U []>
-                              block = nullptr
-                              args = [
-                                UnresolvedConstantLit{
-                                  scope = EmptyTree
-                                  cnst = <C <U String>>
-                                }
-                              ]
-                            }
-                          ]
-                        ]
-                      }
-                    ]
-                  }
-                  fun = <U returns>
-                  block = nullptr
-                  args = [
-                    Send{
-                      recv = UnresolvedConstantLit{
-                        scope = UnresolvedConstantLit{
-                          scope = EmptyTree
-                          cnst = <C <U T>>
-                        }
-                        cnst = <C <U Array>>
-                      }
-                      fun = <U []>
-                      block = nullptr
-                      args = [
-                        UnresolvedConstantLit{
-                          scope = EmptyTree
-                          cnst = <C <U String>>
-                        }
-                      ]
-                    }
-                  ]
-                }
-              }
-              args = [
-              ]
-            }
-
-            MethodDef{
-              flags = dsl
-              name = <U t_array=><<C <U <todo sym>>>>
-              args = [UnresolvedIdent{
-                  kind = Local
-                  name = <U arg0>
-                }, BlockArg{ expr = UnresolvedIdent{
-                  kind = Local
-                  name = <U <blk>>
-                } }]
-              rhs = Send{
-                recv = ConstantLit{
-                  orig = nullptr
-                  symbol = ::T
-                }
-                fun = <U cast>
-                block = nullptr
-                args = [
-                  Send{
-                    recv = ConstantLit{
-                      orig = nullptr
-                      symbol = ::T
-                    }
-                    fun = <U unsafe>
-                    block = nullptr
-                    args = [
-                      Literal{ value = nil }
-                    ]
-                  }
-                  Send{
-                    recv = UnresolvedConstantLit{
-                      scope = UnresolvedConstantLit{
-                        scope = EmptyTree
-                        cnst = <C <U T>>
-                      }
-                      cnst = <C <U Array>>
-                    }
-                    fun = <U []>
-                    block = nullptr
-                    args = [
-                      UnresolvedConstantLit{
-                        scope = EmptyTree
-                        cnst = <C <U String>>
-                      }
-                    ]
-                  }
-                ]
-              }
-            }
-
-            Send{
-              recv = ConstantLit{
-                orig = nullptr
-                symbol = ::T::Sig::WithoutRuntime
-              }
-              fun = <U sig>
-              block = Block {
-                args = [
-                ]
-                body = Send{
-                  recv = Local{
-                    localVariable = <U <self>>
-                  }
-                  fun = <U returns>
-                  block = nullptr
-                  args = [
-                    Send{
-                      recv = UnresolvedConstantLit{
-                        scope = UnresolvedConstantLit{
-                          scope = UnresolvedConstantLit{
-                            scope = UnresolvedConstantLit{
-                              scope = UnresolvedConstantLit{
-                                scope = ConstantLit{
-                                  orig = nullptr
-                                  symbol = ::<root>
-                                }
-                                cnst = <C <U Chalk>>
-                              }
-                              cnst = <C <U ODM>>
-                            }
-                            cnst = <C <U Mutator>>
-                          }
-                          cnst = <C <U Private>>
-                        }
-                        cnst = <C <U ArrayMutator>>
-                      }
-                      fun = <U []>
-                      block = nullptr
-                      args = [
-                        UnresolvedConstantLit{
-                          scope = EmptyTree
-                          cnst = <C <U String>>
-                        }
-                      ]
-                    }
-                  ]
-                }
-              }
-              args = [
-              ]
-            }
-
-            MethodDef{
-              flags = dsl
-              name = <U t_array><<C <U <todo sym>>>>
-              args = [BlockArg{ expr = UnresolvedIdent{
-                  kind = Local
-                  name = <U <blk>>
-                } }]
-              rhs = Send{
-                recv = ConstantLit{
-                  orig = nullptr
-                  symbol = ::T
-                }
-                fun = <U cast>
-                block = nullptr
-                args = [
-                  Send{
-                    recv = ConstantLit{
-                      orig = nullptr
-                      symbol = ::T
-                    }
-                    fun = <U unsafe>
-                    block = nullptr
-                    args = [
-                      Literal{ value = nil }
-                    ]
-                  }
-                  Send{
-                    recv = UnresolvedConstantLit{
-                      scope = UnresolvedConstantLit{
-                        scope = UnresolvedConstantLit{
-                          scope = UnresolvedConstantLit{
-                            scope = UnresolvedConstantLit{
-                              scope = ConstantLit{
-                                orig = nullptr
-                                symbol = ::<root>
-                              }
-                              cnst = <C <U Chalk>>
-                            }
-                            cnst = <C <U ODM>>
-                          }
-                          cnst = <C <U Mutator>>
-                        }
-                        cnst = <C <U Private>>
-                      }
-                      cnst = <C <U ArrayMutator>>
-                    }
-                    fun = <U []>
-                    block = nullptr
-                    args = [
-                      UnresolvedConstantLit{
-                        scope = EmptyTree
-                        cnst = <C <U String>>
-                      }
-                    ]
-                  }
-                ]
-              }
-            }
-          ]
-        }
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        ClassDef{
-          kind = class
-          name = UnresolvedConstantLit{
-            scope = EmptyTree
-            cnst = <C <U Mutator>>
-          }<<C <U <todo sym>>>>
-          ancestors = []
-          rhs = [
-            EmptyTree
-
-            EmptyTree
-
-            EmptyTree
-
-            EmptyTree
-
-            Send{
-              recv = ConstantLit{
-                orig = nullptr
-                symbol = ::T::Sig::WithoutRuntime
-              }
-              fun = <U sig>
-              block = Block {
-                args = [
-                ]
-                body = Send{
-                  recv = Send{
-                    recv = Local{
-                      localVariable = <U <self>>
-                    }
-                    fun = <U params>
-                    block = nullptr
-                    args = [
-                      Hash{
-                        pairs = [
-                          [
-                            key = Literal{ value = :"arg0" }
-                            value = Send{
-                              recv = UnresolvedConstantLit{
-                                scope = UnresolvedConstantLit{
-                                  scope = EmptyTree
-                                  cnst = <C <U T>>
-                                }
-                                cnst = <C <U Hash>>
-                              }
-                              fun = <U []>
-                              block = nullptr
-                              args = [
-                                UnresolvedConstantLit{
-                                  scope = EmptyTree
-                                  cnst = <C <U Symbol>>
-                                }
-                                UnresolvedConstantLit{
-                                  scope = EmptyTree
-                                  cnst = <C <U String>>
-                                }
-                              ]
-                            }
-                          ]
-                        ]
-                      }
-                    ]
-                  }
-                  fun = <U returns>
-                  block = nullptr
-                  args = [
-                    Send{
-                      recv = UnresolvedConstantLit{
-                        scope = UnresolvedConstantLit{
-                          scope = EmptyTree
-                          cnst = <C <U T>>
-                        }
-                        cnst = <C <U Hash>>
-                      }
-                      fun = <U []>
-                      block = nullptr
-                      args = [
-                        UnresolvedConstantLit{
-                          scope = EmptyTree
-                          cnst = <C <U Symbol>>
-                        }
-                        UnresolvedConstantLit{
-                          scope = EmptyTree
-                          cnst = <C <U String>>
-                        }
-                      ]
-                    }
-                  ]
-                }
-              }
-              args = [
-              ]
-            }
-
-            MethodDef{
-              flags = dsl
-              name = <U hash_of=><<C <U <todo sym>>>>
-              args = [UnresolvedIdent{
-                  kind = Local
-                  name = <U arg0>
-                }, BlockArg{ expr = UnresolvedIdent{
-                  kind = Local
-                  name = <U <blk>>
-                } }]
-              rhs = Send{
-                recv = ConstantLit{
-                  orig = nullptr
-                  symbol = ::T
-                }
-                fun = <U cast>
-                block = nullptr
-                args = [
-                  Send{
-                    recv = ConstantLit{
-                      orig = nullptr
-                      symbol = ::T
-                    }
-                    fun = <U unsafe>
-                    block = nullptr
-                    args = [
-                      Literal{ value = nil }
-                    ]
-                  }
-                  Send{
-                    recv = UnresolvedConstantLit{
-                      scope = UnresolvedConstantLit{
-                        scope = EmptyTree
-                        cnst = <C <U T>>
-                      }
-                      cnst = <C <U Hash>>
-                    }
-                    fun = <U []>
-                    block = nullptr
-                    args = [
-                      UnresolvedConstantLit{
-                        scope = EmptyTree
-                        cnst = <C <U Symbol>>
-                      }
-                      UnresolvedConstantLit{
-                        scope = EmptyTree
-                        cnst = <C <U String>>
-                      }
-                    ]
-                  }
-                ]
-              }
-            }
-
-            Send{
-              recv = ConstantLit{
-                orig = nullptr
-                symbol = ::T::Sig::WithoutRuntime
-              }
-              fun = <U sig>
-              block = Block {
-                args = [
-                ]
-                body = Send{
-                  recv = Local{
-                    localVariable = <U <self>>
-                  }
-                  fun = <U returns>
-                  block = nullptr
-                  args = [
-                    Send{
-                      recv = UnresolvedConstantLit{
-                        scope = UnresolvedConstantLit{
-                          scope = UnresolvedConstantLit{
-                            scope = UnresolvedConstantLit{
-                              scope = UnresolvedConstantLit{
-                                scope = ConstantLit{
-                                  orig = nullptr
-                                  symbol = ::<root>
-                                }
-                                cnst = <C <U Chalk>>
-                              }
-                              cnst = <C <U ODM>>
-                            }
-                            cnst = <C <U Mutator>>
-                          }
-                          cnst = <C <U Private>>
-                        }
-                        cnst = <C <U HashMutator>>
-                      }
-                      fun = <U []>
-                      block = nullptr
-                      args = [
-                        UnresolvedConstantLit{
-                          scope = EmptyTree
-                          cnst = <C <U Symbol>>
-                        }
-                        UnresolvedConstantLit{
-                          scope = EmptyTree
-                          cnst = <C <U String>>
-                        }
-                      ]
-                    }
-                  ]
-                }
-              }
-              args = [
-              ]
-            }
-
-            MethodDef{
-              flags = dsl
-              name = <U hash_of><<C <U <todo sym>>>>
-              args = [BlockArg{ expr = UnresolvedIdent{
-                  kind = Local
-                  name = <U <blk>>
-                } }]
-              rhs = Send{
-                recv = ConstantLit{
-                  orig = nullptr
-                  symbol = ::T
-                }
-                fun = <U cast>
-                block = nullptr
-                args = [
-                  Send{
-                    recv = ConstantLit{
-                      orig = nullptr
-                      symbol = ::T
-                    }
-                    fun = <U unsafe>
-                    block = nullptr
-                    args = [
-                      Literal{ value = nil }
-                    ]
-                  }
-                  Send{
-                    recv = UnresolvedConstantLit{
-                      scope = UnresolvedConstantLit{
-                        scope = UnresolvedConstantLit{
-                          scope = UnresolvedConstantLit{
-                            scope = UnresolvedConstantLit{
-                              scope = ConstantLit{
-                                orig = nullptr
-                                symbol = ::<root>
-                              }
-                              cnst = <C <U Chalk>>
-                            }
-                            cnst = <C <U ODM>>
-                          }
-                          cnst = <C <U Mutator>>
-                        }
-                        cnst = <C <U Private>>
-                      }
-                      cnst = <C <U HashMutator>>
-                    }
-                    fun = <U []>
-                    block = nullptr
-                    args = [
-                      UnresolvedConstantLit{
-                        scope = EmptyTree
-                        cnst = <C <U Symbol>>
-                      }
-                      UnresolvedConstantLit{
-                        scope = EmptyTree
-                        cnst = <C <U String>>
-                      }
-                    ]
-                  }
-                ]
-              }
-            }
-          ]
-        }
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        ClassDef{
-          kind = class
-          name = UnresolvedConstantLit{
-            scope = EmptyTree
-            cnst = <C <U Mutator>>
-          }<<C <U <todo sym>>>>
-          ancestors = []
-          rhs = [
-            EmptyTree
-
-            EmptyTree
-
-            EmptyTree
-
-            EmptyTree
-
-            Send{
-              recv = ConstantLit{
-                orig = nullptr
-                symbol = ::T::Sig::WithoutRuntime
-              }
-              fun = <U sig>
-              block = Block {
-                args = [
-                ]
-                body = Send{
-                  recv = Send{
-                    recv = Local{
-                      localVariable = <U <self>>
-                    }
-                    fun = <U params>
-                    block = nullptr
-                    args = [
-                      Hash{
-                        pairs = [
-                          [
-                            key = Literal{ value = :"arg0" }
-                            value = UnresolvedConstantLit{
-                              scope = EmptyTree
-                              cnst = <C <U Array>>
-                            }
-                          ]
-                        ]
-                      }
-                    ]
-                  }
-                  fun = <U returns>
-                  block = nullptr
-                  args = [
-                    UnresolvedConstantLit{
-                      scope = EmptyTree
-                      cnst = <C <U Array>>
-                    }
-                  ]
-                }
-              }
-              args = [
-              ]
-            }
-
-            MethodDef{
-              flags = dsl
-              name = <U no_class_arg=><<C <U <todo sym>>>>
-              args = [UnresolvedIdent{
-                  kind = Local
-                  name = <U arg0>
-                }, BlockArg{ expr = UnresolvedIdent{
-                  kind = Local
-                  name = <U <blk>>
-                } }]
-              rhs = Send{
-                recv = ConstantLit{
-                  orig = nullptr
-                  symbol = ::T
-                }
-                fun = <U cast>
-                block = nullptr
-                args = [
-                  Send{
-                    recv = ConstantLit{
-                      orig = nullptr
-                      symbol = ::T
-                    }
-                    fun = <U unsafe>
-                    block = nullptr
-                    args = [
-                      Literal{ value = nil }
-                    ]
-                  }
-                  UnresolvedConstantLit{
-                    scope = EmptyTree
-                    cnst = <C <U Array>>
-                  }
-                ]
-              }
-            }
-
-            Send{
-              recv = ConstantLit{
-                orig = nullptr
-                symbol = ::T::Sig::WithoutRuntime
-              }
-              fun = <U sig>
-              block = Block {
-                args = [
-                ]
-                body = Send{
-                  recv = Local{
-                    localVariable = <U <self>>
-                  }
-                  fun = <U returns>
-                  block = nullptr
-                  args = [
-                    Send{
-                      recv = UnresolvedConstantLit{
-                        scope = UnresolvedConstantLit{
-                          scope = UnresolvedConstantLit{
-                            scope = UnresolvedConstantLit{
-                              scope = UnresolvedConstantLit{
-                                scope = ConstantLit{
-                                  orig = nullptr
-                                  symbol = ::<root>
-                                }
-                                cnst = <C <U Chalk>>
-                              }
-                              cnst = <C <U ODM>>
-                            }
-                            cnst = <C <U Mutator>>
-                          }
-                          cnst = <C <U Private>>
-                        }
-                        cnst = <C <U ArrayMutator>>
-                      }
-                      fun = <U []>
-                      block = nullptr
-                      args = [
-                        Send{
-                          recv = ConstantLit{
-                            orig = nullptr
-                            symbol = ::T
-                          }
-                          fun = <U untyped>
-                          block = nullptr
-                          args = [
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              }
-              args = [
-              ]
-            }
-
-            MethodDef{
-              flags = dsl
-              name = <U no_class_arg><<C <U <todo sym>>>>
-              args = [BlockArg{ expr = UnresolvedIdent{
-                  kind = Local
-                  name = <U <blk>>
-                } }]
-              rhs = Send{
-                recv = ConstantLit{
-                  orig = nullptr
-                  symbol = ::T
-                }
-                fun = <U cast>
-                block = nullptr
-                args = [
-                  Send{
-                    recv = ConstantLit{
-                      orig = nullptr
-                      symbol = ::T
-                    }
-                    fun = <U unsafe>
-                    block = nullptr
-                    args = [
-                      Literal{ value = nil }
-                    ]
-                  }
-                  Send{
-                    recv = UnresolvedConstantLit{
-                      scope = UnresolvedConstantLit{
-                        scope = UnresolvedConstantLit{
-                          scope = UnresolvedConstantLit{
-                            scope = UnresolvedConstantLit{
-                              scope = ConstantLit{
-                                orig = nullptr
-                                symbol = ::<root>
-                              }
-                              cnst = <C <U Chalk>>
-                            }
-                            cnst = <C <U ODM>>
-                          }
-                          cnst = <C <U Mutator>>
-                        }
-                        cnst = <C <U Private>>
-                      }
-                      cnst = <C <U ArrayMutator>>
-                    }
-                    fun = <U []>
-                    block = nullptr
-                    args = [
-                      Send{
-                        recv = ConstantLit{
-                          orig = nullptr
-                          symbol = ::T
-                        }
-                        fun = <U untyped>
-                        block = nullptr
-                        args = [
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            }
-          ]
-        }
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
         Send{
           recv = ConstantLit{
             orig = nullptr
@@ -2787,6 +1417,220 @@ ClassDef{
           }
         }
 
+        ClassDef{
+          kind = class
+          name = UnresolvedConstantLit{
+            scope = EmptyTree
+            cnst = <C <U Mutator>>
+          }<<C <U <todo sym>>>>
+          ancestors = []
+          rhs = [
+            Send{
+              recv = ConstantLit{
+                orig = nullptr
+                symbol = ::T::Sig::WithoutRuntime
+              }
+              fun = <U sig>
+              block = Block {
+                args = [
+                ]
+                body = Send{
+                  recv = Send{
+                    recv = Local{
+                      localVariable = <U <self>>
+                    }
+                    fun = <U params>
+                    block = nullptr
+                    args = [
+                      Hash{
+                        pairs = [
+                          [
+                            key = Literal{ value = :"arg0" }
+                            value = UnresolvedConstantLit{
+                              scope = EmptyTree
+                              cnst = <C <U Array>>
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  }
+                  fun = <U returns>
+                  block = nullptr
+                  args = [
+                    UnresolvedConstantLit{
+                      scope = EmptyTree
+                      cnst = <C <U Array>>
+                    }
+                  ]
+                }
+              }
+              args = [
+              ]
+            }
+
+            MethodDef{
+              flags = dsl
+              name = <U array=><<C <U <todo sym>>>>
+              args = [UnresolvedIdent{
+                  kind = Local
+                  name = <U arg0>
+                }, BlockArg{ expr = UnresolvedIdent{
+                  kind = Local
+                  name = <U <blk>>
+                } }]
+              rhs = Send{
+                recv = ConstantLit{
+                  orig = nullptr
+                  symbol = ::T
+                }
+                fun = <U cast>
+                block = nullptr
+                args = [
+                  Send{
+                    recv = ConstantLit{
+                      orig = nullptr
+                      symbol = ::T
+                    }
+                    fun = <U unsafe>
+                    block = nullptr
+                    args = [
+                      Literal{ value = nil }
+                    ]
+                  }
+                  UnresolvedConstantLit{
+                    scope = EmptyTree
+                    cnst = <C <U Array>>
+                  }
+                ]
+              }
+            }
+
+            Send{
+              recv = ConstantLit{
+                orig = nullptr
+                symbol = ::T::Sig::WithoutRuntime
+              }
+              fun = <U sig>
+              block = Block {
+                args = [
+                ]
+                body = Send{
+                  recv = Local{
+                    localVariable = <U <self>>
+                  }
+                  fun = <U returns>
+                  block = nullptr
+                  args = [
+                    Send{
+                      recv = UnresolvedConstantLit{
+                        scope = UnresolvedConstantLit{
+                          scope = UnresolvedConstantLit{
+                            scope = UnresolvedConstantLit{
+                              scope = UnresolvedConstantLit{
+                                scope = ConstantLit{
+                                  orig = nullptr
+                                  symbol = ::<root>
+                                }
+                                cnst = <C <U Chalk>>
+                              }
+                              cnst = <C <U ODM>>
+                            }
+                            cnst = <C <U Mutator>>
+                          }
+                          cnst = <C <U Private>>
+                        }
+                        cnst = <C <U ArrayMutator>>
+                      }
+                      fun = <U []>
+                      block = nullptr
+                      args = [
+                        Send{
+                          recv = ConstantLit{
+                            orig = nullptr
+                            symbol = ::T
+                          }
+                          fun = <U untyped>
+                          block = nullptr
+                          args = [
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+              args = [
+              ]
+            }
+
+            MethodDef{
+              flags = dsl
+              name = <U array><<C <U <todo sym>>>>
+              args = [BlockArg{ expr = UnresolvedIdent{
+                  kind = Local
+                  name = <U <blk>>
+                } }]
+              rhs = Send{
+                recv = ConstantLit{
+                  orig = nullptr
+                  symbol = ::T
+                }
+                fun = <U cast>
+                block = nullptr
+                args = [
+                  Send{
+                    recv = ConstantLit{
+                      orig = nullptr
+                      symbol = ::T
+                    }
+                    fun = <U unsafe>
+                    block = nullptr
+                    args = [
+                      Literal{ value = nil }
+                    ]
+                  }
+                  Send{
+                    recv = UnresolvedConstantLit{
+                      scope = UnresolvedConstantLit{
+                        scope = UnresolvedConstantLit{
+                          scope = UnresolvedConstantLit{
+                            scope = UnresolvedConstantLit{
+                              scope = ConstantLit{
+                                orig = nullptr
+                                symbol = ::<root>
+                              }
+                              cnst = <C <U Chalk>>
+                            }
+                            cnst = <C <U ODM>>
+                          }
+                          cnst = <C <U Mutator>>
+                        }
+                        cnst = <C <U Private>>
+                      }
+                      cnst = <C <U ArrayMutator>>
+                    }
+                    fun = <U []>
+                    block = nullptr
+                    args = [
+                      Send{
+                        recv = ConstantLit{
+                          orig = nullptr
+                          symbol = ::T
+                        }
+                        fun = <U untyped>
+                        block = nullptr
+                        args = [
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+
         Send{
           recv = ConstantLit{
             orig = nullptr
@@ -3141,6 +1985,220 @@ ClassDef{
           }
         }
 
+        ClassDef{
+          kind = class
+          name = UnresolvedConstantLit{
+            scope = EmptyTree
+            cnst = <C <U Mutator>>
+          }<<C <U <todo sym>>>>
+          ancestors = []
+          rhs = [
+            Send{
+              recv = ConstantLit{
+                orig = nullptr
+                symbol = ::T::Sig::WithoutRuntime
+              }
+              fun = <U sig>
+              block = Block {
+                args = [
+                ]
+                body = Send{
+                  recv = Send{
+                    recv = Local{
+                      localVariable = <U <self>>
+                    }
+                    fun = <U params>
+                    block = nullptr
+                    args = [
+                      Hash{
+                        pairs = [
+                          [
+                            key = Literal{ value = :"arg0" }
+                            value = UnresolvedConstantLit{
+                              scope = EmptyTree
+                              cnst = <C <U Array>>
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  }
+                  fun = <U returns>
+                  block = nullptr
+                  args = [
+                    UnresolvedConstantLit{
+                      scope = EmptyTree
+                      cnst = <C <U Array>>
+                    }
+                  ]
+                }
+              }
+              args = [
+              ]
+            }
+
+            MethodDef{
+              flags = dsl
+              name = <U array_of_explicit=><<C <U <todo sym>>>>
+              args = [UnresolvedIdent{
+                  kind = Local
+                  name = <U arg0>
+                }, BlockArg{ expr = UnresolvedIdent{
+                  kind = Local
+                  name = <U <blk>>
+                } }]
+              rhs = Send{
+                recv = ConstantLit{
+                  orig = nullptr
+                  symbol = ::T
+                }
+                fun = <U cast>
+                block = nullptr
+                args = [
+                  Send{
+                    recv = ConstantLit{
+                      orig = nullptr
+                      symbol = ::T
+                    }
+                    fun = <U unsafe>
+                    block = nullptr
+                    args = [
+                      Literal{ value = nil }
+                    ]
+                  }
+                  UnresolvedConstantLit{
+                    scope = EmptyTree
+                    cnst = <C <U Array>>
+                  }
+                ]
+              }
+            }
+
+            Send{
+              recv = ConstantLit{
+                orig = nullptr
+                symbol = ::T::Sig::WithoutRuntime
+              }
+              fun = <U sig>
+              block = Block {
+                args = [
+                ]
+                body = Send{
+                  recv = Local{
+                    localVariable = <U <self>>
+                  }
+                  fun = <U returns>
+                  block = nullptr
+                  args = [
+                    Send{
+                      recv = UnresolvedConstantLit{
+                        scope = UnresolvedConstantLit{
+                          scope = UnresolvedConstantLit{
+                            scope = UnresolvedConstantLit{
+                              scope = UnresolvedConstantLit{
+                                scope = ConstantLit{
+                                  orig = nullptr
+                                  symbol = ::<root>
+                                }
+                                cnst = <C <U Chalk>>
+                              }
+                              cnst = <C <U ODM>>
+                            }
+                            cnst = <C <U Mutator>>
+                          }
+                          cnst = <C <U Private>>
+                        }
+                        cnst = <C <U ArrayMutator>>
+                      }
+                      fun = <U []>
+                      block = nullptr
+                      args = [
+                        Send{
+                          recv = ConstantLit{
+                            orig = nullptr
+                            symbol = ::T
+                          }
+                          fun = <U untyped>
+                          block = nullptr
+                          args = [
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+              args = [
+              ]
+            }
+
+            MethodDef{
+              flags = dsl
+              name = <U array_of_explicit><<C <U <todo sym>>>>
+              args = [BlockArg{ expr = UnresolvedIdent{
+                  kind = Local
+                  name = <U <blk>>
+                } }]
+              rhs = Send{
+                recv = ConstantLit{
+                  orig = nullptr
+                  symbol = ::T
+                }
+                fun = <U cast>
+                block = nullptr
+                args = [
+                  Send{
+                    recv = ConstantLit{
+                      orig = nullptr
+                      symbol = ::T
+                    }
+                    fun = <U unsafe>
+                    block = nullptr
+                    args = [
+                      Literal{ value = nil }
+                    ]
+                  }
+                  Send{
+                    recv = UnresolvedConstantLit{
+                      scope = UnresolvedConstantLit{
+                        scope = UnresolvedConstantLit{
+                          scope = UnresolvedConstantLit{
+                            scope = UnresolvedConstantLit{
+                              scope = ConstantLit{
+                                orig = nullptr
+                                symbol = ::<root>
+                              }
+                              cnst = <C <U Chalk>>
+                            }
+                            cnst = <C <U ODM>>
+                          }
+                          cnst = <C <U Mutator>>
+                        }
+                        cnst = <C <U Private>>
+                      }
+                      cnst = <C <U ArrayMutator>>
+                    }
+                    fun = <U []>
+                    block = nullptr
+                    args = [
+                      Send{
+                        recv = ConstantLit{
+                          orig = nullptr
+                          symbol = ::T
+                        }
+                        fun = <U untyped>
+                        block = nullptr
+                        args = [
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+
         Send{
           recv = ConstantLit{
             orig = nullptr
@@ -3356,6 +2414,247 @@ ClassDef{
               }
             ]
           }
+        }
+
+        ClassDef{
+          kind = class
+          name = UnresolvedConstantLit{
+            scope = EmptyTree
+            cnst = <C <U Mutator>>
+          }<<C <U <todo sym>>>>
+          ancestors = []
+          rhs = [
+            Send{
+              recv = ConstantLit{
+                orig = nullptr
+                symbol = ::T::Sig::WithoutRuntime
+              }
+              fun = <U sig>
+              block = Block {
+                args = [
+                ]
+                body = Send{
+                  recv = Send{
+                    recv = Local{
+                      localVariable = <U <self>>
+                    }
+                    fun = <U params>
+                    block = nullptr
+                    args = [
+                      Hash{
+                        pairs = [
+                          [
+                            key = Literal{ value = :"arg0" }
+                            value = Send{
+                              recv = UnresolvedConstantLit{
+                                scope = UnresolvedConstantLit{
+                                  scope = EmptyTree
+                                  cnst = <C <U T>>
+                                }
+                                cnst = <C <U Array>>
+                              }
+                              fun = <U []>
+                              block = nullptr
+                              args = [
+                                UnresolvedConstantLit{
+                                  scope = EmptyTree
+                                  cnst = <C <U String>>
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  }
+                  fun = <U returns>
+                  block = nullptr
+                  args = [
+                    Send{
+                      recv = UnresolvedConstantLit{
+                        scope = UnresolvedConstantLit{
+                          scope = EmptyTree
+                          cnst = <C <U T>>
+                        }
+                        cnst = <C <U Array>>
+                      }
+                      fun = <U []>
+                      block = nullptr
+                      args = [
+                        UnresolvedConstantLit{
+                          scope = EmptyTree
+                          cnst = <C <U String>>
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+              args = [
+              ]
+            }
+
+            MethodDef{
+              flags = dsl
+              name = <U t_array=><<C <U <todo sym>>>>
+              args = [UnresolvedIdent{
+                  kind = Local
+                  name = <U arg0>
+                }, BlockArg{ expr = UnresolvedIdent{
+                  kind = Local
+                  name = <U <blk>>
+                } }]
+              rhs = Send{
+                recv = ConstantLit{
+                  orig = nullptr
+                  symbol = ::T
+                }
+                fun = <U cast>
+                block = nullptr
+                args = [
+                  Send{
+                    recv = ConstantLit{
+                      orig = nullptr
+                      symbol = ::T
+                    }
+                    fun = <U unsafe>
+                    block = nullptr
+                    args = [
+                      Literal{ value = nil }
+                    ]
+                  }
+                  Send{
+                    recv = UnresolvedConstantLit{
+                      scope = UnresolvedConstantLit{
+                        scope = EmptyTree
+                        cnst = <C <U T>>
+                      }
+                      cnst = <C <U Array>>
+                    }
+                    fun = <U []>
+                    block = nullptr
+                    args = [
+                      UnresolvedConstantLit{
+                        scope = EmptyTree
+                        cnst = <C <U String>>
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+
+            Send{
+              recv = ConstantLit{
+                orig = nullptr
+                symbol = ::T::Sig::WithoutRuntime
+              }
+              fun = <U sig>
+              block = Block {
+                args = [
+                ]
+                body = Send{
+                  recv = Local{
+                    localVariable = <U <self>>
+                  }
+                  fun = <U returns>
+                  block = nullptr
+                  args = [
+                    Send{
+                      recv = UnresolvedConstantLit{
+                        scope = UnresolvedConstantLit{
+                          scope = UnresolvedConstantLit{
+                            scope = UnresolvedConstantLit{
+                              scope = UnresolvedConstantLit{
+                                scope = ConstantLit{
+                                  orig = nullptr
+                                  symbol = ::<root>
+                                }
+                                cnst = <C <U Chalk>>
+                              }
+                              cnst = <C <U ODM>>
+                            }
+                            cnst = <C <U Mutator>>
+                          }
+                          cnst = <C <U Private>>
+                        }
+                        cnst = <C <U ArrayMutator>>
+                      }
+                      fun = <U []>
+                      block = nullptr
+                      args = [
+                        UnresolvedConstantLit{
+                          scope = EmptyTree
+                          cnst = <C <U String>>
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+              args = [
+              ]
+            }
+
+            MethodDef{
+              flags = dsl
+              name = <U t_array><<C <U <todo sym>>>>
+              args = [BlockArg{ expr = UnresolvedIdent{
+                  kind = Local
+                  name = <U <blk>>
+                } }]
+              rhs = Send{
+                recv = ConstantLit{
+                  orig = nullptr
+                  symbol = ::T
+                }
+                fun = <U cast>
+                block = nullptr
+                args = [
+                  Send{
+                    recv = ConstantLit{
+                      orig = nullptr
+                      symbol = ::T
+                    }
+                    fun = <U unsafe>
+                    block = nullptr
+                    args = [
+                      Literal{ value = nil }
+                    ]
+                  }
+                  Send{
+                    recv = UnresolvedConstantLit{
+                      scope = UnresolvedConstantLit{
+                        scope = UnresolvedConstantLit{
+                          scope = UnresolvedConstantLit{
+                            scope = UnresolvedConstantLit{
+                              scope = ConstantLit{
+                                orig = nullptr
+                                symbol = ::<root>
+                              }
+                              cnst = <C <U Chalk>>
+                            }
+                            cnst = <C <U ODM>>
+                          }
+                          cnst = <C <U Mutator>>
+                        }
+                        cnst = <C <U Private>>
+                      }
+                      cnst = <C <U ArrayMutator>>
+                    }
+                    fun = <U []>
+                    block = nullptr
+                    args = [
+                      UnresolvedConstantLit{
+                        scope = EmptyTree
+                        cnst = <C <U String>>
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         }
 
         Send{
@@ -3595,6 +2894,267 @@ ClassDef{
           }
         }
 
+        ClassDef{
+          kind = class
+          name = UnresolvedConstantLit{
+            scope = EmptyTree
+            cnst = <C <U Mutator>>
+          }<<C <U <todo sym>>>>
+          ancestors = []
+          rhs = [
+            Send{
+              recv = ConstantLit{
+                orig = nullptr
+                symbol = ::T::Sig::WithoutRuntime
+              }
+              fun = <U sig>
+              block = Block {
+                args = [
+                ]
+                body = Send{
+                  recv = Send{
+                    recv = Local{
+                      localVariable = <U <self>>
+                    }
+                    fun = <U params>
+                    block = nullptr
+                    args = [
+                      Hash{
+                        pairs = [
+                          [
+                            key = Literal{ value = :"arg0" }
+                            value = Send{
+                              recv = UnresolvedConstantLit{
+                                scope = UnresolvedConstantLit{
+                                  scope = EmptyTree
+                                  cnst = <C <U T>>
+                                }
+                                cnst = <C <U Hash>>
+                              }
+                              fun = <U []>
+                              block = nullptr
+                              args = [
+                                UnresolvedConstantLit{
+                                  scope = EmptyTree
+                                  cnst = <C <U Symbol>>
+                                }
+                                UnresolvedConstantLit{
+                                  scope = EmptyTree
+                                  cnst = <C <U String>>
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  }
+                  fun = <U returns>
+                  block = nullptr
+                  args = [
+                    Send{
+                      recv = UnresolvedConstantLit{
+                        scope = UnresolvedConstantLit{
+                          scope = EmptyTree
+                          cnst = <C <U T>>
+                        }
+                        cnst = <C <U Hash>>
+                      }
+                      fun = <U []>
+                      block = nullptr
+                      args = [
+                        UnresolvedConstantLit{
+                          scope = EmptyTree
+                          cnst = <C <U Symbol>>
+                        }
+                        UnresolvedConstantLit{
+                          scope = EmptyTree
+                          cnst = <C <U String>>
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+              args = [
+              ]
+            }
+
+            MethodDef{
+              flags = dsl
+              name = <U hash_of=><<C <U <todo sym>>>>
+              args = [UnresolvedIdent{
+                  kind = Local
+                  name = <U arg0>
+                }, BlockArg{ expr = UnresolvedIdent{
+                  kind = Local
+                  name = <U <blk>>
+                } }]
+              rhs = Send{
+                recv = ConstantLit{
+                  orig = nullptr
+                  symbol = ::T
+                }
+                fun = <U cast>
+                block = nullptr
+                args = [
+                  Send{
+                    recv = ConstantLit{
+                      orig = nullptr
+                      symbol = ::T
+                    }
+                    fun = <U unsafe>
+                    block = nullptr
+                    args = [
+                      Literal{ value = nil }
+                    ]
+                  }
+                  Send{
+                    recv = UnresolvedConstantLit{
+                      scope = UnresolvedConstantLit{
+                        scope = EmptyTree
+                        cnst = <C <U T>>
+                      }
+                      cnst = <C <U Hash>>
+                    }
+                    fun = <U []>
+                    block = nullptr
+                    args = [
+                      UnresolvedConstantLit{
+                        scope = EmptyTree
+                        cnst = <C <U Symbol>>
+                      }
+                      UnresolvedConstantLit{
+                        scope = EmptyTree
+                        cnst = <C <U String>>
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+
+            Send{
+              recv = ConstantLit{
+                orig = nullptr
+                symbol = ::T::Sig::WithoutRuntime
+              }
+              fun = <U sig>
+              block = Block {
+                args = [
+                ]
+                body = Send{
+                  recv = Local{
+                    localVariable = <U <self>>
+                  }
+                  fun = <U returns>
+                  block = nullptr
+                  args = [
+                    Send{
+                      recv = UnresolvedConstantLit{
+                        scope = UnresolvedConstantLit{
+                          scope = UnresolvedConstantLit{
+                            scope = UnresolvedConstantLit{
+                              scope = UnresolvedConstantLit{
+                                scope = ConstantLit{
+                                  orig = nullptr
+                                  symbol = ::<root>
+                                }
+                                cnst = <C <U Chalk>>
+                              }
+                              cnst = <C <U ODM>>
+                            }
+                            cnst = <C <U Mutator>>
+                          }
+                          cnst = <C <U Private>>
+                        }
+                        cnst = <C <U HashMutator>>
+                      }
+                      fun = <U []>
+                      block = nullptr
+                      args = [
+                        UnresolvedConstantLit{
+                          scope = EmptyTree
+                          cnst = <C <U Symbol>>
+                        }
+                        UnresolvedConstantLit{
+                          scope = EmptyTree
+                          cnst = <C <U String>>
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+              args = [
+              ]
+            }
+
+            MethodDef{
+              flags = dsl
+              name = <U hash_of><<C <U <todo sym>>>>
+              args = [BlockArg{ expr = UnresolvedIdent{
+                  kind = Local
+                  name = <U <blk>>
+                } }]
+              rhs = Send{
+                recv = ConstantLit{
+                  orig = nullptr
+                  symbol = ::T
+                }
+                fun = <U cast>
+                block = nullptr
+                args = [
+                  Send{
+                    recv = ConstantLit{
+                      orig = nullptr
+                      symbol = ::T
+                    }
+                    fun = <U unsafe>
+                    block = nullptr
+                    args = [
+                      Literal{ value = nil }
+                    ]
+                  }
+                  Send{
+                    recv = UnresolvedConstantLit{
+                      scope = UnresolvedConstantLit{
+                        scope = UnresolvedConstantLit{
+                          scope = UnresolvedConstantLit{
+                            scope = UnresolvedConstantLit{
+                              scope = ConstantLit{
+                                orig = nullptr
+                                symbol = ::<root>
+                              }
+                              cnst = <C <U Chalk>>
+                            }
+                            cnst = <C <U ODM>>
+                          }
+                          cnst = <C <U Mutator>>
+                        }
+                        cnst = <C <U Private>>
+                      }
+                      cnst = <C <U HashMutator>>
+                    }
+                    fun = <U []>
+                    block = nullptr
+                    args = [
+                      UnresolvedConstantLit{
+                        scope = EmptyTree
+                        cnst = <C <U Symbol>>
+                      }
+                      UnresolvedConstantLit{
+                        scope = EmptyTree
+                        cnst = <C <U String>>
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+
         Send{
           recv = ConstantLit{
             orig = nullptr
@@ -3806,6 +3366,220 @@ ClassDef{
               }
             ]
           }
+        }
+
+        ClassDef{
+          kind = class
+          name = UnresolvedConstantLit{
+            scope = EmptyTree
+            cnst = <C <U Mutator>>
+          }<<C <U <todo sym>>>>
+          ancestors = []
+          rhs = [
+            Send{
+              recv = ConstantLit{
+                orig = nullptr
+                symbol = ::T::Sig::WithoutRuntime
+              }
+              fun = <U sig>
+              block = Block {
+                args = [
+                ]
+                body = Send{
+                  recv = Send{
+                    recv = Local{
+                      localVariable = <U <self>>
+                    }
+                    fun = <U params>
+                    block = nullptr
+                    args = [
+                      Hash{
+                        pairs = [
+                          [
+                            key = Literal{ value = :"arg0" }
+                            value = UnresolvedConstantLit{
+                              scope = EmptyTree
+                              cnst = <C <U Array>>
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  }
+                  fun = <U returns>
+                  block = nullptr
+                  args = [
+                    UnresolvedConstantLit{
+                      scope = EmptyTree
+                      cnst = <C <U Array>>
+                    }
+                  ]
+                }
+              }
+              args = [
+              ]
+            }
+
+            MethodDef{
+              flags = dsl
+              name = <U no_class_arg=><<C <U <todo sym>>>>
+              args = [UnresolvedIdent{
+                  kind = Local
+                  name = <U arg0>
+                }, BlockArg{ expr = UnresolvedIdent{
+                  kind = Local
+                  name = <U <blk>>
+                } }]
+              rhs = Send{
+                recv = ConstantLit{
+                  orig = nullptr
+                  symbol = ::T
+                }
+                fun = <U cast>
+                block = nullptr
+                args = [
+                  Send{
+                    recv = ConstantLit{
+                      orig = nullptr
+                      symbol = ::T
+                    }
+                    fun = <U unsafe>
+                    block = nullptr
+                    args = [
+                      Literal{ value = nil }
+                    ]
+                  }
+                  UnresolvedConstantLit{
+                    scope = EmptyTree
+                    cnst = <C <U Array>>
+                  }
+                ]
+              }
+            }
+
+            Send{
+              recv = ConstantLit{
+                orig = nullptr
+                symbol = ::T::Sig::WithoutRuntime
+              }
+              fun = <U sig>
+              block = Block {
+                args = [
+                ]
+                body = Send{
+                  recv = Local{
+                    localVariable = <U <self>>
+                  }
+                  fun = <U returns>
+                  block = nullptr
+                  args = [
+                    Send{
+                      recv = UnresolvedConstantLit{
+                        scope = UnresolvedConstantLit{
+                          scope = UnresolvedConstantLit{
+                            scope = UnresolvedConstantLit{
+                              scope = UnresolvedConstantLit{
+                                scope = ConstantLit{
+                                  orig = nullptr
+                                  symbol = ::<root>
+                                }
+                                cnst = <C <U Chalk>>
+                              }
+                              cnst = <C <U ODM>>
+                            }
+                            cnst = <C <U Mutator>>
+                          }
+                          cnst = <C <U Private>>
+                        }
+                        cnst = <C <U ArrayMutator>>
+                      }
+                      fun = <U []>
+                      block = nullptr
+                      args = [
+                        Send{
+                          recv = ConstantLit{
+                            orig = nullptr
+                            symbol = ::T
+                          }
+                          fun = <U untyped>
+                          block = nullptr
+                          args = [
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+              args = [
+              ]
+            }
+
+            MethodDef{
+              flags = dsl
+              name = <U no_class_arg><<C <U <todo sym>>>>
+              args = [BlockArg{ expr = UnresolvedIdent{
+                  kind = Local
+                  name = <U <blk>>
+                } }]
+              rhs = Send{
+                recv = ConstantLit{
+                  orig = nullptr
+                  symbol = ::T
+                }
+                fun = <U cast>
+                block = nullptr
+                args = [
+                  Send{
+                    recv = ConstantLit{
+                      orig = nullptr
+                      symbol = ::T
+                    }
+                    fun = <U unsafe>
+                    block = nullptr
+                    args = [
+                      Literal{ value = nil }
+                    ]
+                  }
+                  Send{
+                    recv = UnresolvedConstantLit{
+                      scope = UnresolvedConstantLit{
+                        scope = UnresolvedConstantLit{
+                          scope = UnresolvedConstantLit{
+                            scope = UnresolvedConstantLit{
+                              scope = ConstantLit{
+                                orig = nullptr
+                                symbol = ::<root>
+                              }
+                              cnst = <C <U Chalk>>
+                            }
+                            cnst = <C <U ODM>>
+                          }
+                          cnst = <C <U Mutator>>
+                        }
+                        cnst = <C <U Private>>
+                      }
+                      cnst = <C <U ArrayMutator>>
+                    }
+                    fun = <U []>
+                    block = nullptr
+                    args = [
+                      Send{
+                        recv = ConstantLit{
+                          orig = nullptr
+                          symbol = ::T
+                        }
+                        fun = <U untyped>
+                        block = nullptr
+                        args = [
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         }
 
         Send{
@@ -5472,22 +5246,6 @@ ClassDef{
           symbol = ::<todo sym>
         }]
       rhs = [
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
         Send{
           recv = ConstantLit{
             orig = nullptr
@@ -5805,18 +5563,6 @@ ClassDef{
           symbol = ::<todo sym>
         }]
       rhs = [
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
         Send{
           recv = ConstantLit{
             orig = nullptr
@@ -6053,10 +5799,6 @@ ClassDef{
           symbol = ::<todo sym>
         }]
       rhs = [
-        EmptyTree
-
-        EmptyTree
-
         Send{
           recv = ConstantLit{
             orig = nullptr
@@ -6141,30 +5883,6 @@ ClassDef{
           symbol = ::<todo sym>
         }]
       rhs = [
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
-        EmptyTree
-
         Send{
           recv = ConstantLit{
             orig = nullptr
@@ -6857,8 +6575,6 @@ ClassDef{
         }
       ]
     }
-
-    EmptyTree
 
     MethodDef{
       flags = 0
