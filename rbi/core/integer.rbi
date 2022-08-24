@@ -926,7 +926,20 @@ class Integer < Numeric
   # a.pow(b)     #=> same as a**b
   # a.pow(b, m)  #=> same as (a**b) % m, but avoids huge temporary values
   # ```
-  def pow(*_); end
+  sig do
+    params(
+        arg0: Numeric,
+    )
+    .returns(T.any(Integer, Float, Rational))
+  end
+  sig do
+    params(
+        arg0: Integer,
+        arg1: Integer,
+    )
+    .returns(T.any(Integer, Float, Rational))
+  end
+  def pow(arg0, arg1); end
 
   # Returns the predecessor of `int`, i.e. the
   # [`Integer`](https://docs.ruby-lang.org/en/2.7.0/Integer.html) equal to
